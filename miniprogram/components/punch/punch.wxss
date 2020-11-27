@@ -1,0 +1,77 @@
+.body-box{
+  width: 100%;/*先写死，等下再加*/
+  border: 2rpx solid #eceffe;
+  border-radius: 10rpx;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 15rpx;
+  z-index: 9;
+  padding: 30rpx 40rpx 10rpx 40rpx;
+  box-sizing: border-box;
+}
+.box-top{
+  border-bottom: solid 1.5px #f3f3f3;
+}
+.punch{
+  display: flex;
+  white-space: nowrap;
+}
+.punch-title{
+  background-color: #ff903e;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+  width: 90rpx;
+  height: 50rpx;
+  font-size: 14px;
+  color: #ffffff;
+}
+.punch-name{
+  margin-left: 10rpx;
+  width:82%;
+  font-size: 18px;
+  font-weight: 520;
+  white-space: pre-wrap;
+
+}
+.participate{
+  margin: 20rpx 0 30rpx 0;
+  display: flex;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #888888;
+}
+.participate-times{
+  margin: 0 10rpx;
+}
+.join{
+  position: absolute;
+  border: solid 2px #ff903e;
+  border-radius: 30rpx;
+  padding: 5rpx 20rpx;
+  bottom: 208rpx;
+  right: 40rpx;
+}
+.box-bottom{
+  padding: 20rpx 0 1rpx 0;
+  display: flex;
+}
+.user-image image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #ff66ff;
+}
+.user-comment{
+  line-height: 60rpx;
+  background-color: #eeeeee;
+  margin-left: 20rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  border-radius: 20rpx;
+  padding: 0 20rpx 0 20rpx;
+  box-sizing: border-box;
+  color: #777777;
+}

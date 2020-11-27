@@ -1,0 +1,14 @@
+<view class="main">
+  <view class="img">
+    <image class="" src="{{img}}" ></image>
+  </view>
+  <view class="title">
+    {{title}}
+  </view> 
+  <view wx:if="{{description}}" class="description" >
+    {{description}}
+  </view>
+  <view class="right">
+  </view>
+</view>
+  

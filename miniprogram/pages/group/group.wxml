@@ -1,0 +1,31 @@
+<view class="main">
+  <!--没有滚动时显示-->
+  <view class="nav1">
+    <nav-bar title="打卡小组" statusBarColor="{{statusBarColor}}" navBarColor="{{navBarColor}}" titleColor="{{titleColor}}"  isGoBack="true"> 
+    </nav-bar>
+    <view class="container">
+      <view class="nav-background ">
+        <view class="clock_content">
+          <view class="clock-top">
+            <view class="clock-front">打卡</view>
+            <view class="clock-title">每天一个小目标</view>
+          </view>
+          <view class="clock-bottom">
+            <view class="times">666次围观 </view>
+            <view class="point">·</view>
+            <view class="times">666次参与 </view>
+          </view>
+        </view>   
+      </view>
+    </view>
+    <view class="body-container" >
+      <view class="content">
+     
+      </view>
+     
+    </view>
+  </view>
+ 
+  
+</view>
+      

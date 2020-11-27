@@ -1,0 +1,72 @@
+<view class="daka" >
+  <nav-bar title="发起一个打卡" statusBarColor="{{statusBarColor}}" navBarColor="{{navBarColor}}" titleColor="{{titleColor}}" isGoBack="true"> 
+  </nav-bar>
+  <view class="content" >
+    <input class="input-name" value="" type="text" maxlength="{{titleMax}}" placeholder="输入打卡名称"  bindinput="title">
+    </input>
+    <label class="lable" for="">{{titleNumber}}/{{titleMax}}</label>
+  </view>
+  <view class="toast">{{titleToast}}</view>
+  <view class="select">
+    <view class="privacy">
+      <view class="privacy-title">隐私</view>
+      <view class="privacy-button">
+        <view class="open {{isOpen? 'selected': 'no'}} " bindtap="open">
+          公开
+        </view>
+        <view class="private {{isOpen? 'no':'selected' }} " bindtap="private">
+          私密
+        </view> 
+      </view> 
+    </view> 
+  </view>
+  <view class="promise" wx:if="{{isOpen}}">
+    <view class="promise-title">
+      <view class="title-top">
+        允许被精选
+      </view>
+      <view class="title-content">
+        {{switchContent}}
+      </view>
+    </view>
+    <view class="promise-button">
+      <switch class="switch" color="#ff903e" checked="true" type="switch" bindchange="switch"></switch>
+    </view>   
+  </view>
+  <view class="promise-no" wx:else>
+    私密打卡，仅限自己参与
+  </view>
+  <view class="introduction">
+    <view class="introduction-title">
+      简介
+    </view>
+    <view class="template">
+      <view class="template-item {{one? 'selected': 'no'}}" data-index="one" bindtap="select">
+        模板一
+      </view>
+      <view class="template-item {{two? 'selected': 'no'}}" data-index="two" bindtap="select">
+        模板二
+      </view>
+      <view class="template-item {{three? 'selected': 'no'}}" data-index="three" bindtap="select">
+        模板三
+      </view>
+    </view>
+  </view>
+  <view class="text-area">
+    <textarea class="textarea" value="{{content}}" maxlength="{{max}}" placeholder="{{placeholder}}"  bindinput="input">
+      
+    </textarea>
+    <text class="textContent">{{currentWordNumber|0}}/{{max}}</text>
+  </view>
+  <view class="commit">
+    <view class="button" bindtap="commit">
+      确认发起
+    </view>
+      
+      
+  </view>
+    
+    
+</view>
+   
+   
